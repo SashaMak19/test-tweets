@@ -9,12 +9,10 @@ import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/test-tweets">
       <Provider store={store}>
         <App />
       </Provider>
     </BrowserRouter>
   </React.StrictMode>
 );
-
-// basename="/test-tweets"
