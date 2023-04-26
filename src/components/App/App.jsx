@@ -12,7 +12,6 @@ export const App = () => {
         <Route path="/tweets" element={<TweetsPage />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
-      {/* <TweetsPage /> */}
     </div>
   );
 };
