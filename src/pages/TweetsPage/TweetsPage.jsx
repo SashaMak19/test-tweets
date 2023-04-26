@@ -8,11 +8,11 @@ export const TweetsPage = () => {
   const dispatch = useDispatch();
   const users = useSelector(selectUsers);
 
-  const [perPage, setPerPage] = useState(6);
+  const [perPage, setPerPage] = useState(9);
   const page = 1;
 
   const handleLoadMore = () => {
-    setPerPage(perPage + 6);
+    setPerPage(perPage + 9);
     console.log(users);
   };
 
@@ -27,6 +27,7 @@ export const TweetsPage = () => {
   return (
     <CardsList
       displayedUsers={displayedUsers}
+      perPage={perPage}
       handleLoadMore={handleLoadMore}
     />
   );

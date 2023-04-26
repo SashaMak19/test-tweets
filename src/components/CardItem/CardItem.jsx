@@ -52,17 +52,3 @@ export const CardItem = ({ displayedUsers }) => {
     )
   );
 };
-
-// export const CardItem = ({ cards, handleClick }) => {
-//   return cards.map(({ id, avatar, user, tweets, followers }, index) => (
-//     <li key={id}>
-//       <img src={avatar} alt={user} />
-//       <h2>{user}</h2>
-//       <p>{Math.floor(tweets / 100)} TWEETS</p>
-//       <p>{(followers / 1000).toFixed(3)} FOLLOWERS</p>
-//       <button type="button" onClick={() => handleClick(index, id)}>
-//         FOLLOW
-//       </button>
-//     </li>
-//   ));
-// };
